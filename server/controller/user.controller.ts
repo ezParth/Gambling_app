@@ -4,7 +4,7 @@ import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 const { NullResponse, ValueResponse, CustomError } = require('./Response');
 
-const SECRET = 'helloworld';
+const SECRET: string = process.env.MONGO_URI || "nothing"
 
 const login = asyncHandler(async (req: any, res: any) => {
     const { username, password } = req.body;
@@ -74,3 +74,5 @@ const signin = asyncHandler(async (req: any, res: any) => {
 
     return new ValueResponse(201, "User created successfully", "user", userInfo, true).SendResponse(res);
 });
+
+export { login, signin }

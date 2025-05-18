@@ -59,4 +59,4 @@ class CustomError {
     }
 }
 
-module.exports = { NullResponse, ValueResponse, CustomError };
+export { NullResponse, ValueResponse, CustomError };
