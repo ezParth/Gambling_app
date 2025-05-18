@@ -1,9 +1,10 @@
 import React from "react";
+import Navbar from "./Home/Navbar";
 
 const Home: React.FC = () => {
     return (
-        <div className="flex item-center justify-center h-screen text-white font-bol">
-            Home Page
+        <div className="flex flex-col">
+            <Navbar />
         </div>
     )
 }
