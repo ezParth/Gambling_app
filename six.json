@@ -1,0 +1,150 @@
+{
+	"sixes": [{
+		"batsman": "CH Gayle",
+		"batsman_runs": 6,
+		"count": 252
+	}, {
+		"batsman": "RG Sharma",
+		"batsman_runs": 6,
+		"count": 164
+	}, {
+		"batsman": "SK Raina",
+		"batsman_runs": 6,
+		"count": 161
+	}, {
+		"batsman": "V Kohli",
+		"batsman_runs": 6,
+		"count": 149
+	}, {
+		"batsman": "YK Pathan",
+		"batsman_runs": 6,
+		"count": 143
+	}, {
+		"batsman": "AB de Villiers",
+		"batsman_runs": 6,
+		"count": 142
+	}, {
+		"batsman": "MS Dhoni",
+		"batsman_runs": 6,
+		"count": 140
+	}, {
+		"batsman": "DA Warner",
+		"batsman_runs": 6,
+		"count": 134
+	}],
+	"runs": [{
+		"batsman": "V Kohli",
+		"count": 4115
+	}, {
+		"batsman": "SK Raina",
+		"count": 4106
+	}, {
+		"batsman": "RG Sharma",
+		"count": 3874
+	}, {
+		"batsman": "G Gambhir",
+		"count": 3634
+	}, {
+		"batsman": "CH Gayle",
+		"count": 3451
+	}, {
+		"batsman": "RV Uthappa",
+		"count": 3390
+	}, {
+		"batsman": "DA Warner",
+		"count": 3373
+	}, {
+		"batsman": "MS Dhoni",
+		"count": 3270
+	}, {
+		"batsman": "AB de Villiers",
+		"count": 3270
+	}, {
+		"batsman": "S Dhawan",
+		"count": 3082
+	}, {
+		"batsman": "YK Pathan",
+		"count": 2779
+	}, {
+		"batsman": "V Sehwag",
+		"count": 2728
+	}],
+	"death_over_runs": [{
+			"batsman": "MS Dhoni",
+			"sum": 1908
+		},
+		{
+			"batsman": "RG Sharma",
+			"sum": 1227
+		},
+		{
+			"batsman": "KA Pollard",
+			"sum": 1194
+		},
+		{
+			"batsman": "AB de Villiers",
+			"sum": 1144
+		},
+		{
+			"batsman": "V Kohli",
+			"sum": 970
+		},
+		{
+			"batsman": "YK Pathan",
+			"sum": 894
+		},
+		{
+			"batsman": "JP Duminy",
+			"sum": 869
+		},
+		{
+			"batsman": "Yuvraj Singh",
+			"sum": 768
+		}
+	],
+	"batsman_facing_death_over": [{
+			"index": "MS Dhoni",
+			"count": 1110
+		},
+		{
+			"index": "KA Pollard",
+			"count": 730
+		},
+		{
+			"index": "RG Sharma",
+			"count": 688
+		},
+		{
+			"index": "YK Pathan",
+			"count": 557
+		},
+		{
+			"index": "AB de Villiers",
+			"count": 547
+		},
+		{
+			"index": "RA Jadeja",
+			"count": 527
+		},
+		{
+			"index": "V Kohli",
+			"count": 524
+		},
+		{
+			"index": "JP Duminy",
+			"count": 518
+		},
+		{
+			"index": "IK Pathan",
+			"count": 464
+		},
+		{
+			"index": "Yuvraj Singh",
+			"count": 446
+		},
+		{
+			"index": "JA Morkel",
+			"count": 425
+		}
+	]
+}

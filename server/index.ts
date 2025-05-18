@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 app.use(cors({ origin: "*" }))
 connectDB()
 
-app.use('/api', AuthRouter)
+app.use('/api/auth', AuthRouter)
 
 app.listen(PORT, () => {
     console.log("Server bounded successfully!")

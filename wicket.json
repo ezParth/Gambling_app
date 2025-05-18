@@ -1,0 +1,240 @@
+{
+
+    "wickets": [{
+          "bowler": "SL Malinga",
+          "total_runs": 0,
+          "count": 152
+       }, {
+          "bowler": "DJ Bravo",
+          "total_runs": 0,
+          "count": 132
+       }, {
+          "bowler": "A Mishra",
+          "total_runs": 0,
+          "count": 130
+       }, {
+          "bowler": "PP Chawla",
+          "total_runs": 0,
+          "count": 124
+       }, {
+          "bowler": "Harbhajan Singh",
+          "total_runs": 0,
+          "count": 121
+       }, {
+          "bowler": "R Vinay Kumar",
+          "total_runs": 0,
+          "count": 114
+       }, {
+          "bowler": "A Nehra",
+          "total_runs": 0,
+          "count": 106
+       }, {
+          "bowler": "R Ashwin",
+          "total_runs": 0,
+          "count": 102
+       }, {
+          "bowler": "Z Khan",
+          "total_runs": 0,
+          "count": 102
+       }, {
+          "bowler": "DW Steyn",
+          "total_runs": 0,
+          "count": 99
+       }, {
+          "bowler": "RP Singh",
+          "total_runs": 0,
+          "count": 97
+       }, {
+          "bowler": "PP Ojha",
+          "total_runs": 0,
+          "count": 95
+       }, {
+          "bowler": "SP Narine",
+          "total_runs": 0,
+          "count": 94
+       }, {
+          "bowler": "P Kumar",
+          "total_runs": 0,
+          "count": 93
+       }, {
+          "bowler": "JA Morkel",
+          "total_runs": 0,
+          "count": 92
+       }, {
+          "bowler": "B Kumar",
+          "total_runs": 0,
+          "count": 89
+       }, {
+          "bowler": "SR Watson",
+          "total_runs": 0,
+          "count": 89
+       }, {
+          "bowler": "IK Pathan",
+          "total_runs": 0,
+          "count": 87
+       }, {
+          "bowler": "L Balaji",
+          "total_runs": 0,
+          "count": 81
+       }, {
+          "bowler": "M Morkel",
+          "total_runs": 0,
+          "count": 80
+       }, {
+          "bowler": "RA Jadeja",
+          "total_runs": 0,
+          "count": 80
+       }, {
+          "bowler": "MM Patel",
+          "total_runs": 0,
+          "count": 79
+       }, {
+          "bowler": "UT Yadav",
+          "total_runs": 0,
+          "count": 79
+       }, {
+          "bowler": "AB Dinda",
+          "total_runs": 0,
+          "count": 78
+       }, {
+          "bowler": "R Bhatia",
+          "total_runs": 0,
+          "count": 76
+       }, {
+          "bowler": "MM Sharma",
+          "total_runs": 0,
+          "count": 76
+       }, {
+          "bowler": "DS Kulkarni",
+          "total_runs": 0,
+          "count": 76
+       }, {
+          "bowler": "JH Kallis",
+          "total_runs": 0,
+          "count": 71
+       }, {
+          "bowler": "SK Trivedi",
+          "total_runs": 0,
+          "count": 70
+       }
+ 
+    ],
+    "dots": [{
+          "bowler": "P Kumar",
+          "total_runs": 0,
+          "count": 1035
+       },
+       {
+          "bowler": "DW Steyn",
+          "total_runs": 0,
+          "count": 978
+       },
+       {
+          "bowler": "SL Malinga",
+          "total_runs": 0,
+          "count": 970
+       },
+       {
+          "bowler": "Harbhajan Singh",
+          "total_runs": 0,
+          "count": 966
+       },
+       {
+          "bowler": "R Ashwin",
+          "total_runs": 0,
+          "count": 891
+       },
+       {
+          "bowler": "A Mishra",
+          "total_runs": 0,
+          "count": 875
+       },
+       {
+          "bowler": "PP Chawla",
+          "total_runs": 0,
+          "count": 874
+       },
+       {
+          "bowler": "IK Pathan",
+          "total_runs": 0,
+          "count": 831
+       },
+       {
+          "bowler": "Z Khan",
+          "total_runs": 0,
+          "count": 801
+       },
+       {
+          "bowler": "A Nehra",
+          "total_runs": 0,
+          "count": 751
+       },
+       {
+          "bowler": "R Vinay Kumar",
+          "total_runs": 0,
+          "count": 749
+       },
+       {
+          "bowler": "RP Singh",
+          "total_runs": 0,
+          "count": 744
+       },
+       {
+          "bowler": "B Kumar",
+          "total_runs": 0,
+          "count": 715
+       }
+    ],
+    "death_dots" : [
+    {
+       "bowler":"SL Malinga",
+       "total_runs":0,
+       "count":306
+    },
+    {
+       "bowler":"DJ Bravo",
+       "total_runs":0,
+       "count":243
+    },
+    {
+       "bowler":"SP Narine",
+       "total_runs":0,
+       "count":216
+    },
+    {
+       "bowler":"DW Steyn",
+       "total_runs":0,
+       "count":211
+    },
+    {
+       "bowler":"R Vinay Kumar",
+       "total_runs":0,
+       "count":163
+    },
+    {
+       "bowler":"SR Watson",
+       "total_runs":0,
+       "count":161
+    },
+    {
+       "bowler":"UT Yadav",
+       "total_runs":0,
+       "count":151
+    },
+    {
+       "bowler":"B Kumar",
+       "total_runs":0,
+       "count":148
+    },
+    {
+       "bowler":"RP Singh",
+       "total_runs":0,
+       "count":146
+    },
+    {
+       "bowler":"A Nehra",
+       "total_runs":0,
+       "count":145
+    }
+    ]
+ }
