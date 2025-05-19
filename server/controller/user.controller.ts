@@ -2,7 +2,7 @@ import asyncHandler from "express-async-handler";
 import User from "../model/user.model";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
-const { NullResponse, ValueResponse, CustomError } = require('./Response');
+import { NullResponse, ValueResponse, CustomError } from '../config/Response';
 
 const SECRET: string = process.env.MONGO_URI || "nothing"
 

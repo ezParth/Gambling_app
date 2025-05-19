@@ -1,6 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Navbar: React.FC = () => {
+    const navigation = useNavigate();
+
+    const handleLogin = () => {
+        navigation('/login')
+    }
     return (
         <nav className="flex items-center justify-between h-[8vh] bg-black text-white px-8">
             {/* Left Side */}
@@ -20,8 +26,8 @@ const Navbar: React.FC = () => {
             {/* Right Side */}
             <div className="flex items-center gap-6 text-lg font-semibold">
                 <div className="hover:text-yellow-400 cursor-pointer">About</div>
+                <div className="hover:text-yellow-400 cursor-pointer"  onClick={handleLogin}>Login</div>
                 <div className="hover:text-yellow-400 cursor-pointer">Support</div>
-                <div className="hover:text-yellow-400 cursor-pointer">Login</div>
             </div>
         </nav>
     );

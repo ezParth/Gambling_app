@@ -1,7 +1,11 @@
 import React, { useState } from "react";
-import { loginUser, registerUser } from "../utils/api"; // Adjust path as needed
+import { loginUser, registerUser } from "../../utils/api/login";
+import { useNavigate } from "react-router-dom";
+import { toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login: React.FC = () => {
+    const navigate = useNavigate();
     const [isLogin, setIsLogin] = useState(true);
     const [form, setForm] = useState({
         username: "",
@@ -16,9 +20,29 @@ const Login: React.FC = () => {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         if (isLogin) {
-            await loginUser({ username: form.username, password: form.password });
+            const result = await loginUser({ username: form.username, password: form.password });
+            if(result.success) {
+                navigate('/');
+                toast.success("Task completed!", {
+                    position: "top-right",
+                    autoClose: 3000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "dark",
+                });
+            }else{
+                console.log('result');
+            }
         } else {
-            await registerUser(form);
+            const result = await registerUser(form);
+            if(result.success) {
+                navigate('/');
+            }else{
+                console.log('result');
+            }
         }
     };
 
