@@ -23,6 +23,7 @@ const questionGenerators = [
 
 const getAQuestion = async (req: any, res: any) => {
   try {
+    console.log("Hitting getAQuestion!")
     const randomIndex = generateRandomNumber(questionGenerators.length - 1);
     const selectedFunction = questionGenerators[randomIndex];
 
