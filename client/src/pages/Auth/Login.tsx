@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { loginUser, registerUser } from "../../utils/api/login";
+import { loginUser, registerUser } from "../../api/login";
 import { useNavigate } from "react-router-dom";
 import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';

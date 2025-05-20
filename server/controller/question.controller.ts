@@ -1,4 +1,3 @@
-import Questions from "../model/questions.model";
 import { questions as Questioneer } from "../data/cricket.en.json";
 import WinningTeam from "../data/winningTeamOfSeason.json";
 import generateRandomNumeber from "../utils/generateRandomNumber";
@@ -210,9 +209,20 @@ const generateHeightRunScoredByAPlayerInTheSeason = () => {
 
 const generateGeneralQuestions = () => {
     try {
-        
+        let randomNumebr = generateRandomNumeber(30);
+        let Question = GeneralQuestions[randomNumebr]?.Question
+        let Answer = GeneralQuestions[randomNumebr]?.Answer
+        let Options = GeneralQuestions[randomNumebr]?.Options
+
+        if(Question == undefined || Answer == undefined || Options == undefined) {
+            // return new CustomError(500, "Cannot retrive Questions for some fucking weird reason").SendResponse(res);
+            console.log("Error in generateGeneralQuestions");
+        }
+
+        // return new ValueResponse(200, "successfully fetched questions", "Data: ", { Question, Answer, Options }, true).SendResponse(res);
     } catch (error) {
         console.log("Error during generating general Questions: ", error)
+        // return new CustomError(500, "Cannot retrive Questions for some fucking weird reason").SendResponse(res);
     }
 }
 
@@ -223,4 +233,5 @@ export {
   generateOrangeCapWinner,
   generatePurpleCapWinner,
   generateHeightRunScoredByAPlayerInTheSeason,
+  generateGeneralQuestions
 };
