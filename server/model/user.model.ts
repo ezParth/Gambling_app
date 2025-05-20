@@ -12,6 +12,7 @@ const userSchema = new mongoose.Schema({
     totalCorrectQuestions: { type: Number, default: 0 },
     totalIncorrectQuestions: { type: Number, default: 0 },
     totalPoints: { type: Number, default: 0 }, // correct +5, incorrect -2
+    batch: { type: String, enum: ["noob", "decent", "good", "pro", "God"], default: "noob" }, // 20, 100, 200, 300, 500
 })
 
 const User= mongoose.model('User', userSchema);

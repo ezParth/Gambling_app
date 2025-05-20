@@ -1,0 +1,258 @@
+[
+    {
+      "year": 2008,
+      "winner": "Rajasthan Royals",
+      "player_of_the_tournament": "Shane Watson",
+      "orange_cap": {
+        "player": "Shaun Marsh",
+        "team": "Kings XI Punjab",
+        "runs": 616
+      },
+      "purple_cap": {
+        "player": "Sohail Tanvir",
+        "team": "Rajasthan Royals",
+        "wickets": 22
+      }
+    },
+    {
+      "year": 2009,
+      "winner": "Deccan Chargers",
+      "player_of_the_tournament": "Adam Gilchrist",
+      "orange_cap": {
+        "player": "Matthew Hayden",
+        "team": "Chennai Super Kings",
+        "runs": 572
+      },
+      "purple_cap": {
+        "player": "RP Singh",
+        "team": "Deccan Chargers",
+        "wickets": 23
+      }
+    },
+    {
+      "year": 2010,
+      "winner": "Chennai Super Kings",
+      "player_of_the_tournament": "Sachin Tendulkar",
+      "orange_cap": {
+        "player": "Sachin Tendulkar",
+        "team": "Mumbai Indians",
+        "runs": 618
+      },
+      "purple_cap": {
+        "player": "Pragyan Ojha",
+        "team": "Deccan Chargers",
+        "wickets": 21
+      }
+    },
+    {
+      "year": 2011,
+      "winner": "Chennai Super Kings",
+      "player_of_the_tournament": "Chris Gayle",
+      "orange_cap": {
+        "player": "Chris Gayle",
+        "team": "Royal Challengers Bangalore",
+        "runs": 608
+      },
+      "purple_cap": {
+        "player": "Lasith Malinga",
+        "team": "Mumbai Indians",
+        "wickets": 28
+      }
+    },
+    {
+      "year": 2012,
+      "winner": "Kolkata Knight Riders",
+      "player_of_the_tournament": "Sunil Narine",
+      "orange_cap": {
+        "player": "Chris Gayle",
+        "team": "Royal Challengers Bangalore",
+        "runs": 733
+      },
+      "purple_cap": {
+        "player": "Morne Morkel",
+        "team": "Delhi Daredevils",
+        "wickets": 25
+      }
+    },
+    {
+      "year": 2013,
+      "winner": "Mumbai Indians",
+      "player_of_the_tournament": "Shane Watson",
+      "orange_cap": {
+        "player": "Michael Hussey",
+        "team": "Chennai Super Kings",
+        "runs": 733
+      },
+      "purple_cap": {
+        "player": "Dwayne Bravo",
+        "team": "Chennai Super Kings",
+        "wickets": 32
+      }
+    },
+    {
+      "year": 2014,
+      "winner": "Kolkata Knight Riders",
+      "player_of_the_tournament": "Glenn Maxwell",
+      "orange_cap": {
+        "player": "Robin Uthappa",
+        "team": "Kolkata Knight Riders",
+        "runs": 660
+      },
+      "purple_cap": {
+        "player": "Mohit Sharma",
+        "team": "Chennai Super Kings",
+        "wickets": 23
+      }
+    },
+    {
+      "year": 2015,
+      "winner": "Mumbai Indians",
+      "player_of_the_tournament": "Andre Russell",
+      "orange_cap": {
+        "player": "David Warner",
+        "team": "Sunrisers Hyderabad",
+        "runs": 562
+      },
+      "purple_cap": {
+        "player": "Dwayne Bravo",
+        "team": "Chennai Super Kings",
+        "wickets": 26
+      }
+    },
+    {
+      "year": 2016,
+      "winner": "Sunrisers Hyderabad",
+      "player_of_the_tournament": "Virat Kohli",
+      "orange_cap": {
+        "player": "Virat Kohli",
+        "team": "Royal Challengers Bangalore",
+        "runs": 973
+      },
+      "purple_cap": {
+        "player": "Bhuvneshwar Kumar",
+        "team": "Sunrisers Hyderabad",
+        "wickets": 23
+      }
+    },
+    {
+      "year": 2017,
+      "winner": "Mumbai Indians",
+      "player_of_the_tournament": "Ben Stokes",
+      "orange_cap": {
+        "player": "David Warner",
+        "team": "Sunrisers Hyderabad",
+        "runs": 641
+      },
+      "purple_cap": {
+        "player": "Bhuvneshwar Kumar",
+        "team": "Sunrisers Hyderabad",
+        "wickets": 26
+      }
+    },
+    {
+      "year": 2018,
+      "winner": "Chennai Super Kings",
+      "player_of_the_tournament": "Sunil Narine",
+      "orange_cap": {
+        "player": "Kane Williamson",
+        "team": "Sunrisers Hyderabad",
+        "runs": 735
+      },
+      "purple_cap": {
+        "player": "Andrew Tye",
+        "team": "Kings XI Punjab",
+        "wickets": 24
+      }
+    },
+    {
+      "year": 2019,
+      "winner": "Mumbai Indians",
+      "player_of_the_tournament": "Andre Russell",
+      "orange_cap": {
+        "player": "David Warner",
+        "team": "Sunrisers Hyderabad",
+        "runs": 692
+      },
+      "purple_cap": {
+        "player": "Imran Tahir",
+        "team": "Chennai Super Kings",
+        "wickets": 26
+      }
+    },
+    {
+      "year": 2020,
+      "winner": "Mumbai Indians",
+      "player_of_the_tournament": "Jofra Archer",
+      "orange_cap": {
+        "player": "KL Rahul",
+        "team": "Kings XI Punjab",
+        "runs": 670
+      },
+      "purple_cap": {
+        "player": "Kagiso Rabada",
+        "team": "Delhi Capitals",
+        "wickets": 30
+      }
+    },
+    {
+      "year": 2021,
+      "winner": "Chennai Super Kings",
+      "player_of_the_tournament": "Harshal Patel",
+      "orange_cap": {
+        "player": "Ruturaj Gaikwad",
+        "team": "Chennai Super Kings",
+        "runs": 635
+      },
+      "purple_cap": {
+        "player": "Harshal Patel",
+        "team": "Royal Challengers Bangalore",
+        "wickets": 32
+      }
+    },
+    {
+      "year": 2022,
+      "winner": "Gujarat Titans",
+      "player_of_the_tournament": "Jos Buttler",
+      "orange_cap": {
+        "player": "Jos Buttler",
+        "team": "Rajasthan Royals",
+        "runs": 863
+      },
+      "purple_cap": {
+        "player": "Yuzvendra Chahal",
+        "team": "Rajasthan Royals",
+        "wickets": 27
+      }
+    },
+    {
+      "year": 2023,
+      "winner": "Chennai Super Kings",
+      "player_of_the_tournament": "Shubman Gill",
+      "orange_cap": {
+        "player": "Shubman Gill",
+        "team": "Gujarat Titans",
+        "runs": 890
+      },
+      "purple_cap": {
+        "player": "Mohammed Shami",
+        "team": "Gujarat Titans",
+        "wickets": 28
+      }
+    },
+    {
+      "year": 2024,
+      "winner": "Kolkata Knight Riders",
+      "player_of_the_tournament": "Data not available",
+      "orange_cap": {
+        "player": "Virat Kohli",
+        "team": "Royal Challengers Bengaluru",
+        "runs": 741
+      },
+      "purple_cap": {
+        "player": "Harshal Patel",
+        "team": "Punjab Kings",
+        "wickets": 24
+      }
+    }
+  ]
+  

@@ -1,0 +1,12 @@
+{
+    "questions": {
+      "more_runs": "Who will score more runs this season?",
+      "match_winner": "Which team will win this match?",
+      "season_winner": "Which team won this season?",
+      "scored_more": "Who scored more runs?",
+      "more_wickets": "Which bowler took more wickets?",
+      "has_more_runs": "Who has more runs?",
+      "wins_chasing": "Which team has most number of wins while chasing?"
+    }
+  }
+  

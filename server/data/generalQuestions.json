@@ -1,0 +1,158 @@
+[
+    {
+      "Question": "What is the highest individual score in IPL history?",
+      "Answer": "175*",
+      "Options": ["175*", "191", "121", "102"]
+    },
+    {
+      "Question": "Who holds the record for the highest individual score in IPL history?",
+      "Answer": "Chris Gayle",
+      "Options": ["Brendon McCullum", "Chris Gayle", "Virat Kohli", "AB de Villiers"]
+    },
+    {
+      "Question": "Which player has represented only one team throughout his IPL career?",
+      "Answer": "Virat Kohli",
+      "Options": ["AB de Villiers", "Chris Gayle", "Virat Kohli", "Rohit Sharma"]
+    },
+    {
+      "Question": "Who was voted the most popular cricketer in the IPL according to a 2023 survey?",
+      "Answer": "MS Dhoni",
+      "Options": ["Rohit Sharma", "Virat Kohli", "AB de Villiers", "MS Dhoni"]
+    },
+    {
+      "Question": "Who is the most successful captain in IPL history in terms of titles won?",
+      "Answer": "Rohit Sharma",
+      "Options": ["Rohit Sharma", "Virat Kohli", "MS Dhoni", "Chris Morris"]
+    },
+    {
+      "Question": "Which city is home to the largest cricket stadium in India?",
+      "Answer": "Ahmedabad",
+      "Options": ["New Delhi", "Mumbai", "Ahmedabad", "Mohali"]
+    },
+    {
+      "Question": "Which team has won the most IPL titles?",
+      "Answer": "Mumbai Indians",
+      "Options": ["Chennai Super Kings", "Mumbai Indians", "Kolkata Knight Riders", "Royal Challengers Bangalore"]
+    },
+    {
+      "Question": "Who won the Orange Cap in IPL 2023?",
+      "Answer": "Shubman Gill",
+      "Options": ["Virat Kohli", "Shubman Gill", "Faf du Plessis", "Ruturaj Gaikwad"]
+    },
+    {
+      "Question": "Which bowler has the most wickets in IPL history?",
+      "Answer": "Yuzvendra Chahal",
+      "Options": ["Lasith Malinga", "Dwayne Bravo", "Yuzvendra Chahal", "Ravichandran Ashwin"]
+    },
+    {
+      "Question": "Which team won the IPL 2023 title?",
+      "Answer": "Chennai Super Kings",
+      "Options": ["Mumbai Indians", "Gujarat Titans", "Chennai Super Kings", "Rajasthan Royals"]
+    },
+    {
+      "Question": "Who was the first centurion in IPL history?",
+      "Answer": "Brendon McCullum",
+      "Options": ["Chris Gayle", "Brendon McCullum", "Sachin Tendulkar", "Shane Watson"]
+    },
+    {
+        "Question": "Which team won the inaugural IPL season in 2008?",
+        "Answer": "Rajasthan Royals",
+        "Options": ["Mumbai Indians", "Chennai Super Kings", "Rajasthan Royals", "Kolkata Knight Riders"]
+      },
+      {
+        "Question": "Who is known as 'Mr. IPL'?",
+        "Answer": "Suresh Raina",
+        "Options": ["MS Dhoni", "Virat Kohli", "Suresh Raina", "Rohit Sharma"]
+      },
+      {
+        "Question": "Which team is also known as 'Men in Yellow'?",
+        "Answer": "Chennai Super Kings",
+        "Options": ["Mumbai Indians", "Sunrisers Hyderabad", "Chennai Super Kings", "Punjab Kings"]
+      },
+      {
+        "Question": "Who holds the record for the fastest fifty in IPL history?",
+        "Answer": "KL Rahul",
+        "Options": ["Chris Gayle", "KL Rahul", "AB de Villiers", "Nicholas Pooran"]
+      },
+      {
+        "Question": "Which bowler has taken a hat-trick in IPL 2023?",
+        "Answer": "Rashid Khan",
+        "Options": ["Mohammed Shami", "Rashid Khan", "Tushar Deshpande", "Yuzvendra Chahal"]
+      },
+      {
+        "Question": "Which player hit six sixes in an over in IPL history?",
+        "Answer": "Yuvraj Singh",
+        "Options": ["Chris Gayle", "Yuvraj Singh", "Andre Russell", "Hardik Pandya"]
+      },
+      {
+        "Question": "Which team joined the IPL as a new franchise in 2022?",
+        "Answer": "Gujarat Titans",
+        "Options": ["Lucknow Super Giants", "Gujarat Titans", "Pune Warriors", "Deccan Chargers"]
+      },
+      {
+        "Question": "Who was the captain of Gujarat Titans in IPL 2022?",
+        "Answer": "Hardik Pandya",
+        "Options": ["David Miller", "Hardik Pandya", "Shubman Gill", "Mohammed Shami"]
+      },
+      {
+        "Question": "Which team is associated with the Eden Gardens stadium?",
+        "Answer": "Kolkata Knight Riders",
+        "Options": ["Delhi Capitals", "Kolkata Knight Riders", "Punjab Kings", "Sunrisers Hyderabad"]
+      },
+      {
+        "Question": "Who has the most sixes in IPL history?",
+        "Answer": "Chris Gayle",
+        "Options": ["Chris Gayle", "AB de Villiers", "MS Dhoni", "Rohit Sharma"]
+      },
+      {
+        "Question": "Who won the Purple Cap in IPL 2023?",
+        "Answer": "Mohammed Shami",
+        "Options": ["Yuzvendra Chahal", "Mohammed Shami", "Rashid Khan", "Arshdeep Singh"]
+      },
+      {
+        "Question": "Which IPL franchise was formerly known as Kings XI Punjab?",
+        "Answer": "Punjab Kings",
+        "Options": ["Rajasthan Royals", "Punjab Kings", "Sunrisers Hyderabad", "Delhi Capitals"]
+      },
+      {
+        "Question": "Who was the first Indian to score a century in the IPL?",
+        "Answer": "Manish Pandey",
+        "Options": ["Suresh Raina", "Virat Kohli", "Manish Pandey", "Sachin Tendulkar"]
+      },
+      {
+        "Question": "Which player has the most ducks in IPL history?",
+        "Answer": "Rohit Sharma",
+        "Options": ["Rohit Sharma", "Parthiv Patel", "Harbhajan Singh", "Ambati Rayudu"]
+      },
+      {
+        "Question": "Who was the youngest player to debut in IPL history?",
+        "Answer": "Prayas Ray Barman",
+        "Options": ["Sarfaraz Khan", "Riyan Parag", "Prayas Ray Barman", "Rahul Chahar"]
+      },
+      {
+        "Question": "Which franchise has changed its name and location more than once?",
+        "Answer": "Delhi Capitals",
+        "Options": ["Delhi Capitals", "Lucknow Super Giants", "Sunrisers Hyderabad", "Kolkata Knight Riders"]
+      },
+      {
+        "Question": "What is the maximum number of teams that have participated in a single IPL season?",
+        "Answer": "10",
+        "Options": ["8", "9", "10", "11"]
+      },
+      {
+        "Question": "Who is the only player to win the MVP award multiple times in IPL history?",
+        "Answer": "Andre Russell",
+        "Options": ["AB de Villiers", "Andre Russell", "Shane Watson", "Chris Gayle"]
+      },
+      {
+        "Question": "Which player holds the record for the most catches in IPL as a fielder (non-wicketkeeper)?",
+        "Answer": "Suresh Raina",
+        "Options": ["Virat Kohli", "Kieron Pollard", "Suresh Raina", "Ravindra Jadeja"]
+      },
+      {
+        "Question": "Which team holds the record for the lowest team total in IPL history?",
+        "Answer": "Royal Challengers Bangalore",
+        "Options": ["Delhi Capitals", "Rajasthan Royals", "Royal Challengers Bangalore", "Punjab Kings"]
+      }
+  ]
+  
