@@ -32,6 +32,7 @@ class ValueResponse {
     }
 
     SendResponse(res: any) {
+        console.log("value response data: ", this.data)
         return res.status(this.statusCode).json({
             message: this.message,
             success: this.success,

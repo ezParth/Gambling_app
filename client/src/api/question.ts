@@ -9,8 +9,9 @@ const getQuestion = async () => {
             console.log("not successfull: ", res.data);
             return null;
         }
-
-        return res.data.result;
+        console.log('result: ', res.data.Quiz);
+        // console.log('response', res.)
+        return res.data;
     } catch (error) {
         console.log("Error during getting a question: ", error)
     }

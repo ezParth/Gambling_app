@@ -1,15 +1,18 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import getQuestion from "../../api/question";
-
-const Question = "Who is the Most Popular Cricketer in the World";
-const Answer = "Virat Kohli";
-const Options = ["AB de Villiers", "Chris Gayle", "Virat Kohli", "Rohit Sharma"];
+import toast from "react-hot-toast";
 
 const Quiz: React.FC = () => {
+  const [question, setQuestion] = useState<string>("Click below to fetch quiz question!");
+  const [answer, setAnswer] = useState<string>("");
+  const [options, setOptions] = useState<string[]>([]);
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [isAnswered, setIsAnswered] = useState(false);
+  const [quiz, setQuiz] = useState([]);
+  const countRef: React.RefObject<number> = useRef(0);
 
   const handleOptionClick = (option: string) => {
+    countRef.current += 1;
     if (!isAnswered) {
       setSelectedOption(option);
       setIsAnswered(true);
@@ -18,28 +21,68 @@ const Quiz: React.FC = () => {
 
   const getOptionClass = (option: string) => {
     if (!isAnswered) return "hover:bg-blue-700 bg-blue-600";
-    if (option === Answer) return "bg-green-600";
-    if (option === selectedOption && option !== Answer) return "bg-red-600";
+    if (option === answer) return "bg-green-600";
+    if (option === selectedOption && option !== answer) return "bg-red-600";
     return "bg-blue-600 opacity-70";
   };
 
+  useEffect(() => {
+    setTimeout(() => {
+    if(countRef.current > 4) {
+      fetchdata();
+    } else if(countRef.current >= 1) {
+
+        setQuestion(quiz[countRef.current].question);
+        setAnswer(quiz[countRef.current].answer);
+        setOptions(quiz[countRef.current].options);
+        setSelectedOption(null);
+        setIsAnswered(false);
+        // countRef.current = 0;
+      }
+    }, 2200)
+  }, [isAnswered])
+
+  useEffect(() => {
+    fetchdata();
+  }, [])
+
   const fetchdata = async () => {
     try {
-      const result = await getQuestion();
-      console.log("Result: ",result);
+      const result = await getQuestion(); // result.Quiz => { question, answer, options }
+      const quizData =  result.Quiz;
+      
+      console.log("Quiz: ", quiz)
+      setQuestion(quizData[0].question);
+      setAnswer(quizData[0].answer);
+      setOptions(quizData[0].options);
+      setSelectedOption(null);
+      setIsAnswered(false);
+      countRef.current = 0;
+      setQuiz(result.Quiz);
+      
+      toast.success("✅ Data fetched successfully!");
     } catch (error) {
       console.log("Error in fetchdata: ", error);
+      toast.error("❌ Failed to fetch data.");
     }
-  }
+  };
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#1e1e2f] to-[#0f0f17] text-white font-sans p-6">
       <div className="w-full max-w-xl bg-[#10101a] rounded-2xl shadow-2xl p-8">
         <h1 className="text-3xl font-bold mb-6 text-center text-yellow-400">🎯 IPL Quiz Challenge</h1>
-        <p className="text-xl font-medium mb-8 text-center">{Question}</p>
-        <button onClick={fetchdata}>fetch data dued</button>
+        
+        <p className="text-xl font-medium mb-8 text-center">{question}</p>
+        
+        <button
+          onClick={fetchdata}
+          className="mb-6 w-full py-2 bg-purple-600 hover:bg-purple-700 rounded-xl text-white font-semibold transition"
+        >
+          Fetch Data 🔄
+        </button>
+
         <div className="space-y-4">
-          {Options.map((option) => (
+          {options.map((option) => (
             <button
               key={option}
               onClick={() => handleOptionClick(option)}
@@ -53,11 +96,11 @@ const Quiz: React.FC = () => {
 
         {isAnswered && (
           <div className="mt-6 text-center text-xl">
-            {selectedOption === Answer ? (
+            {selectedOption === answer ? (
               <span className="text-green-400 font-semibold">✅ Correct!</span>
             ) : (
               <span className="text-red-400 font-semibold">
-                ❌ Oops! The correct answer is <span className="underline">{Answer}</span>
+                ❌ Oops! The correct answer is <span className="underline">{answer}</span>
               </span>
             )}
           </div>

@@ -7,7 +7,7 @@ import {
   generateOrangeCapWinner,
   generatePurpleCapWinner,
   generateHeightRunScoredByAPlayerInTheSeason,
-  generateGeneralQuestions
+  generateGeneralQuestions,
 } from "./question.controller";
 
 const questionGenerators = [
@@ -17,29 +17,36 @@ const questionGenerators = [
   generateOrangeCapWinner,
   generatePurpleCapWinner,
   generateHeightRunScoredByAPlayerInTheSeason,
-  generateGeneralQuestions
+  generateGeneralQuestions,
 ];
 
 const getAQuestion = async (req: any, res: any) => {
   try {
-    console.log("Hitting getAQuestion!")
-    const randomIndex = generateRandomNumber(questionGenerators.length - 1);
-    const selectedFunction = questionGenerators[randomIndex];
+    let randomIndex = generateRandomNumber(questionGenerators.length - 1);
+    const promises = Array.from({ length: 5 }, () => {
+      randomIndex = randomIndex + 1;
+      randomIndex = randomIndex % 7;
+      console.log("random index: ", randomIndex)
+      const selectedFunction = questionGenerators[randomIndex] || generateGeneralQuestions;
+      return selectedFunction();
+    });
 
-    console.log("random number: ", randomIndex, "Selected functions: ", selectedFunction)
-    let result
-    if(selectedFunction != undefined) {
-        result = selectedFunction();
-        console.log("#",result)
-    } else{
-        result = generateGeneralQuestions();
-    }
+    const response = await Promise.all(promises);
+    console.log('Response: ', response)
 
-    console.log("results: ", result);
-    return new ValueResponse(200, "successfully fetched questions", "Data: ", result, true).SendResponse(res);
+    return new ValueResponse(
+      200,
+      "Successfully fetched questions",
+      "Quiz",
+      response,
+      true
+    ).SendResponse(res);
   } catch (error) {
-    console.error("Error during generating a question:", error);
-    return new CustomError(500, "Cannot retrive Questions for some fucking weird reason").SendResponse(res);
+    console.error("Error during generating questions:", error);
+    return new CustomError(
+      500,
+      "Cannot retrieve questions due to an internal error."
+    ).SendResponse(res);
   }
 };
 
