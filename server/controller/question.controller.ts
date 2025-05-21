@@ -3,135 +3,124 @@ import WinningTeam from "../data/winningTeamOfSeason.json";
 import generateRandomNumeber from "../utils/generateRandomNumber";
 import playerOftheSeason from "../data/playerOfTheYear.json";
 import winningTeamOfSeason from "../data/winningTeamOfSeason.json";
-import GeneralQuestions from "../data/generalQuestions.json"
+import GeneralQuestions from "../data/generalQuestions.json";
 
-const generateWhichTeamWonThisSeason = async () => {
+const generateWhichTeamWonThisSeason = () => {
   const season_winner = Questioneer.season_winner;
-  let randomNumebr: number = generateRandomNumeber(2024 - 2007);
-  const val = WinningTeam[--randomNumebr];
+  let randomNumber: number = generateRandomNumeber(2024 - 2007);
+  const val = WinningTeam[--randomNumber];
   if (val == undefined) {
-    generateWhichTeamWonThisSeason();
-    return;
+    return generateWhichTeamWonThisSeason();
   }
-  let options = [];
-  // console.log("VALUE: ", val)
-  // console.log("VALUE: ", val?.year)
-  // console.log("VALUE: ", val?.winner)
-  options.push(val?.winner);
-  for (let i = 0; i < 3; i++) {
-    options.push(WinningTeam[randomNumebr++ % 16]);
+
+  const options: string[] = [val.winner];
+  let i = 0;
+  let index = randomNumber + 1;
+  while (options.length < 4 && i < 30) {
+    const team = WinningTeam[index % 17]?.winner;
+    if (team && !options.includes(team)) {
+      options.push(team);
+    }
+    index++;
+    i++;
   }
-  const questionString = season_winner + ` -${val?.year}`;
-  const answer = val?.winner;
-  console.log("String; ", questionString);
-  console.log("Answer: ", answer);
+
+  return {
+    question: `${season_winner} - ${val.year}`,
+    answer: val.winner,
+    options
+  };
 };
 
-const generatePlayerOfTheSeason = async () => {
+const generatePlayerOfTheSeason = () => {
   try {
-    let options = [];
-    let randomNumebr: number;
-    let answer;
-    let Question;
-    randomNumebr = generateRandomNumeber(16);
-    const player_season = playerOftheSeason[randomNumebr]?.player;
-    let year = playerOftheSeason[randomNumebr]?.year;
-    answer = player_season;
-    randomNumebr++;
-    let temp = 0;
-    options.push(player_season);
-    while (temp < 3) {
-      randomNumebr = randomNumebr % 17;
-      let isTrue = false;
-      options.forEach((option) => {
-        if (option == playerOftheSeason[randomNumebr]?.player) {
-          isTrue = true;
-        }
-      });
+    const options: string[] = [];
 
-      if (!isTrue) {
-        options.push(playerOftheSeason[randomNumebr]?.player);
+    let entry: { player: string; year: number } | undefined;
+    let attempts = 0;
+
+    while (attempts < 10) {
+      const randomIndex = generateRandomNumeber(playerOftheSeason.length);
+      const potential = playerOftheSeason[randomIndex];
+      if (potential?.player && potential?.year) {
+        entry = potential;
+        break;
+      }
+      attempts++;
+    }
+
+    if (!entry) {
+      throw new Error("Valid player entry could not be found.");
+    }
+
+    const player: string = entry.player;
+    const year: number = entry.year;
+    const answer = player;
+    options.push(player);
+
+    let temp = 0;
+    let randomIndex = generateRandomNumeber(playerOftheSeason.length);
+    while (temp < 3) {
+      const otherPlayer = playerOftheSeason[randomIndex % playerOftheSeason.length]?.player;
+      if (otherPlayer && !options.includes(otherPlayer)) {
+        options.push(otherPlayer);
         temp++;
       }
-      randomNumebr++;
+      randomIndex++;
     }
-    Question = Questioneer.player_season + year + ` was?`;
-    let s = 1;
-    console.log("Question: ", Question, " Answer: ", answer);
-    options.forEach((option) => {
-      console.log(s++, ". ", option);
-    });
+
+    const question = `${Questioneer.player_season} ${year} was?`;
+    return { question, answer, options };
   } catch (error) {
-    console.log("Error in generatePlayerOftheSeason: ", error);
+    console.error("Error in generatePlayerOfTheSeason:", error);
   }
 };
 
 const generatePlayerOfTheSeasonTeam = () => {
-  let Question, answer, year, randomNumebr;
-  let options = [];
-  randomNumebr = generateRandomNumeber(16);
-  answer = playerOftheSeason[randomNumebr]?.team;
-  year = playerOftheSeason[randomNumebr]?.year;
-  options.push(answer);
-  let temp = 0;
-  randomNumebr++;
-  let g = 1;
-  while (temp < 3) {
-    randomNumebr = randomNumebr % 17;
-    if (g == 30) {
-      break;
-    }
-    g++;
-    let istrue = false;
-    let ans = playerOftheSeason[randomNumebr]?.team;
-    options.forEach((option) => {
-      if (option == ans) {
-        istrue = true;
-      }
-    });
+  let randomNumber = generateRandomNumeber(16);
+  const year = playerOftheSeason[randomNumber]?.year;
+  const answer = playerOftheSeason[randomNumber]?.team;
+  const options: (string | undefined)[] = [answer];
 
-    if (!istrue) {
-      options.push(ans);
+  let temp = 0;
+  randomNumber++;
+  let g = 1;
+  while (temp < 3 && g < 30) {
+    const team = playerOftheSeason[randomNumber % 17]?.team;
+    if (team && !options.includes(team)) {
+      options.push(team);
       temp++;
     }
-    randomNumebr++;
+    randomNumber++;
+    g++;
   }
-  Question = Questioneer.player_season_Team + year;
-  console.log("Question: ", Question, "\n Answer: ", answer);
-  let s = 1;
-  options.forEach((o) => {
-    console.log(s++, ". ", o);
-  });
+
+  const question = `${Questioneer.player_season_Team} ${year}`;
+  return { question, answer, options: options.filter((x): x is string => !!x) };
 };
 
 const generateOrangeCapWinner = () => {
   try {
-    let Question, answer, randomNumebr;
-    let options = [];
-    randomNumebr = generateRandomNumeber(16);
-    answer = winningTeamOfSeason[randomNumebr]?.orange_cap;
-    Question = Questioneer.orange_cap + winningTeamOfSeason[randomNumebr]?.year;
-    options.push(answer);
+    let randomNumber = generateRandomNumeber(16);
+    const year = winningTeamOfSeason[randomNumber]?.year;
+    const answer = winningTeamOfSeason[randomNumber]?.orange_cap?.player;
+    const options: (string | undefined)[] = [answer];
+
     let temp = 0;
-    randomNumebr++;
+    randomNumber++;
     let g = 1;
-    while (temp < 3) {
-      randomNumebr = randomNumebr % 17;
-      if (g == 30 || options.length == 4) break;
-      g++;
-      let ans = winningTeamOfSeason[randomNumebr]?.orange_cap;
-      let istrue = false;
-      options.forEach((op) => {
-        if (op == ans) {
-          istrue = true;
-        }
-      });
-      if (!istrue) {
+    while (temp < 3 && g < 30) {
+      const cap = winningTeamOfSeason[randomNumber % 17]?.orange_cap?.player;
+      if (cap && !options.includes(cap)) {
+        options.push(cap);
         temp++;
-        options.push(ans);
       }
-      randomNumebr++;
+      randomNumber++;
+      g++;
     }
+
+    const question = `${Questioneer.orange_cap} ${year}`;
+    return { question, answer, options: options.filter((x): x is string => !!x) };
   } catch (error) {
     console.log("Error during orange cap winner generation: ", error);
   }
@@ -139,92 +128,80 @@ const generateOrangeCapWinner = () => {
 
 const generatePurpleCapWinner = () => {
   try {
-    let Question, answer, ans, randomNumebr;
-    let options = [];
-    randomNumebr = generateRandomNumeber(16);
-    answer = winningTeamOfSeason[randomNumebr]?.purple_cap;
-    options.push(answer);
-    Question = Questioneer.purple_cap + winningTeamOfSeason[randomNumebr]?.year;
-    randomNumebr++;
-    let temp = 0,
-      g = 0;
-    while (temp < 3) {
-      if (g == 30 || options.length == 4) break;
-      let istrue = false;
-      let ans = winningTeamOfSeason[randomNumebr]?.purple_cap;
-      options.forEach((op) => {
-        if (op == ans) {
-          istrue = true;
-        }
-      });
-      if (!istrue) {
+    let randomNumber = generateRandomNumeber(16);
+    const year = winningTeamOfSeason[randomNumber]?.year;
+    const answer = winningTeamOfSeason[randomNumber]?.purple_cap?.player;
+    const options: (string | undefined)[] = [answer];
+
+    let temp = 0;
+    randomNumber++;
+    let g = 0;
+    while (temp < 3 && g < 30) {
+      const cap = winningTeamOfSeason[randomNumber % 17]?.purple_cap?.player;
+      if (cap && !options.includes(cap)) {
+        options.push(cap);
         temp++;
-        options.push(ans);
       }
-      randomNumebr++;
+      randomNumber++;
+      g++;
     }
+
+    const question = `${Questioneer.purple_cap} ${year}`;
+    return { question, answer, options: options.filter((x): x is string => !!x) };
   } catch (error) {
-    console.log("Errror during purple cap generation: ", error);
+    console.log("Error during purple cap winner generation: ", error);
   }
 };
 
 const generateHeightRunScoredByAPlayerInTheSeason = () => {
   try {
-    let Question, answer, ans, randomNumebr;
-    let options = [];
-    randomNumebr = generateRandomNumeber(16);
-    answer = winningTeamOfSeason[randomNumebr]?.orange_cap.runs;
-    Question =
-      Questioneer.height_runs_By_player_season +
-      winningTeamOfSeason[randomNumebr]?.year;
-    options.push(answer);
-    randomNumebr++;
+    let randomNumber = generateRandomNumeber(16);
+    const year = winningTeamOfSeason[randomNumber]?.year;
+    const answer = winningTeamOfSeason[randomNumber]?.orange_cap?.runs;
+    const options: (string | undefined | number)[] = [answer];
+
     let temp = 0;
     let g = 0;
-    while (temp < 3) {
-      if (g == 20 || options.length == 4) break;
-      g++;
-      let ans = winningTeamOfSeason[randomNumebr]?.orange_cap.runs;
-      let isTrue = false;
-      randomNumebr = randomNumebr % 17;
-      options.forEach((p) => {
-        if (p == ans) {
-          isTrue = true;
-        }
-      });
-
-      if (!isTrue) {
+    randomNumber++;
+    while (temp < 3 && g < 20) {
+      const run = winningTeamOfSeason[randomNumber % 17]?.orange_cap?.runs;
+      if (run && !options.includes(run)) {
+        options.push(run);
         temp++;
-        options.push(ans);
       }
-      randomNumebr++;
+      randomNumber++;
+      g++;
     }
+
+    const question = `${Questioneer.height_runs_By_player_season} ${year}`;
+    return { question, answer, options: options.filter((x): x is string | number => !!x) };
   } catch (error) {
     console.log(
-      "Error druing generating heighest run scored by a player in the season: ",
+      "Error during generating highest run scored by a player in the season: ",
       error
     );
   }
 };
 
 const generateGeneralQuestions = () => {
-    try {
-        let randomNumebr = generateRandomNumeber(30);
-        let Question = GeneralQuestions[randomNumebr]?.Question
-        let Answer = GeneralQuestions[randomNumebr]?.Answer
-        let Options = GeneralQuestions[randomNumebr]?.Options
+  try {
+    let randomNumber = generateRandomNumeber(GeneralQuestions.length);
+    const qObj = GeneralQuestions[randomNumber];
 
-        if(Question == undefined || Answer == undefined || Options == undefined) {
-            // return new CustomError(500, "Cannot retrive Questions for some fucking weird reason").SendResponse(res);
-            console.log("Error in generateGeneralQuestions");
-        }
-
-        // return new ValueResponse(200, "successfully fetched questions", "Data: ", { Question, Answer, Options }, true).SendResponse(res);
-    } catch (error) {
-        console.log("Error during generating general Questions: ", error)
-        // return new CustomError(500, "Cannot retrive Questions for some fucking weird reason").SendResponse(res);
+    if (!qObj?.Question || !qObj?.Answer || !qObj?.Options) {
+      console.log("Error in generateGeneralQuestions");
+      return;
     }
-}
+
+    return {
+      question: qObj.Question,
+      answer: qObj.Answer,
+      options: qObj.Options
+    };
+  } catch (error) {
+    console.log("Error during generating general Questions: ", error);
+  }
+};
 
 export {
   generateWhichTeamWonThisSeason,
