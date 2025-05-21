@@ -68,45 +68,46 @@ const Quiz: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#1e1e2f] to-[#0f0f17] text-white font-sans p-6">
-      <div className="w-full max-w-xl bg-[#10101a] rounded-2xl shadow-2xl p-8">
-        <h1 className="text-3xl font-bold mb-6 text-center text-yellow-400">🎯 IPL Quiz Challenge</h1>
-        
-        <p className="text-xl font-medium mb-8 text-center">{question}</p>
-        
+<div className="max-h-screen flex ml-90 bg-[#f4f4f6] text-gray-900 font-sans p-6">
+  <div className="w-full max-w-xl bg-white rounded-2xl shadow-2xl p-8 border border-gray-200">
+    <h1 className="text-3xl font-bold mb-6 text-center text-indigo-600">🎯 IPL Quiz Challenge</h1>
+
+    <p className="text-xl font-medium mb-8 text-center">{question}</p>
+
+    <button
+      onClick={fetchdata}
+      className="mb-6 w-full py-2 bg-indigo-500 hover:bg-indigo-600 text-white rounded-xl font-semibold transition"
+    >
+      Fetch Data 🔄
+    </button>
+
+    <div className="space-y-4">
+      {options.map((option) => (
         <button
-          onClick={fetchdata}
-          className="mb-6 w-full py-2 bg-purple-600 hover:bg-purple-700 rounded-xl text-white font-semibold transition"
+          key={option}
+          onClick={() => handleOptionClick(option)}
+          className={`w-full py-3 rounded-xl text-lg transition duration-300 ${getOptionClass(option)}`}
+          disabled={isAnswered}
         >
-          Fetch Data 🔄
+          {option}
         </button>
+      ))}
+    </div>
 
-        <div className="space-y-4">
-          {options.map((option) => (
-            <button
-              key={option}
-              onClick={() => handleOptionClick(option)}
-              className={`w-full py-3 rounded-xl text-lg transition duration-300 ${getOptionClass(option)}`}
-              disabled={isAnswered}
-            >
-              {option}
-            </button>
-          ))}
-        </div>
-
-        {isAnswered && (
-          <div className="mt-6 text-center text-xl">
-            {selectedOption === answer ? (
-              <span className="text-green-400 font-semibold">✅ Correct!</span>
-            ) : (
-              <span className="text-red-400 font-semibold">
-                ❌ Oops! The correct answer is <span className="underline">{answer}</span>
-              </span>
-            )}
-          </div>
+    {isAnswered && (
+      <div className="mt-6 text-center text-xl">
+        {selectedOption === answer ? (
+          <span className="text-green-500 font-semibold">✅ Correct!</span>
+        ) : (
+          <span className="text-red-500 font-semibold">
+            ❌ Oops! The correct answer is <span className="underline">{answer}</span>
+          </span>
         )}
       </div>
-    </div>
+    )}
+  </div>
+</div>
+
   );
 };
 
