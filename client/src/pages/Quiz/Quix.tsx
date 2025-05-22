@@ -68,7 +68,7 @@ const Quiz: React.FC = () => {
   };
 
   return (
-<div className="max-h-screen flex ml-90 bg-[#f4f4f6] text-gray-900 font-sans p-6">
+<div className="max-h-screen flex mr-35 bg-[#f4f4f6] text-gray-900 font-sans p-6">
   <div className="w-full max-w-xl bg-white rounded-2xl shadow-2xl p-8 border border-gray-200">
     <h1 className="text-3xl font-bold mb-6 text-center text-indigo-600">🎯 IPL Quiz Challenge</h1>
 

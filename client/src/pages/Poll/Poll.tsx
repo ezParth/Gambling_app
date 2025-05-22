@@ -69,19 +69,20 @@ const Poll: React.FC = () => {
   };
 
   return (
-    <div className="max-h-screen overflow-y-auto bg-[#f0f2f5] text-gray-800 p-6 rounded-2xl shadow-inner w-full">
-      <div className="w-full max-w-xl mx-auto space-y-8">
-        {questions.map((q, idx) => (
-          <div key={idx} ref={(el) => (questionRefs.current[idx] = el)}>
-            <PollQuestion
-              question={q.question}
-              options={q.options}
-              onVote={() => scrollToNext(idx)}
-            />
-          </div>
-        ))}
+<div className="h-full overflow-y-auto bg-[#f0f2f5] text-gray-800 p-6 rounded-2xl w-full">
+  <div className="w-full max-w-xl mx-auto space-y-8">
+    {questions.map((q, idx) => (
+      <div key={idx} ref={(el) => (questionRefs.current[idx] = el)}>
+        <PollQuestion
+          question={q.question}
+          options={q.options}
+          onVote={() => scrollToNext(idx)}
+        />
       </div>
-    </div>
+    ))}
+  </div>
+</div>
+
   );
 };
 

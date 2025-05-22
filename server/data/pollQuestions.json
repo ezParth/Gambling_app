@@ -1,0 +1,237 @@
+[
+    {
+      "question": "🏆 Who will win the IPL 2025?",
+      "options": [
+        { "text": "Chennai Super Kings", "votes": 30 },
+        { "text": "Mumbai Indians", "votes": 25 },
+        { "text": "Royal Challengers Bangalore", "votes": 20 },
+        { "text": "Kolkata Knight Riders", "votes": 15 }
+      ]
+    },
+    {
+      "question": "💡 Best young player of IPL 2025?",
+      "options": [
+        { "text": "Ruturaj Gaikwad", "votes": 10 },
+        { "text": "Tilak Varma", "votes": 8 },
+        { "text": "Yashasvi Jaiswal", "votes": 12 },
+        { "text": "Rinku Singh", "votes": 9 }
+      ]
+    },
+    {
+      "question": "🔥 Most exciting match so far?",
+      "options": [
+        { "text": "CSK vs RCB", "votes": 18 },
+        { "text": "MI vs KKR", "votes": 14 },
+        { "text": "GT vs LSG", "votes": 10 },
+        { "text": "RR vs SRH", "votes": 9 }
+      ]
+    },
+    {
+      "question": "🎯 Best captain of IPL 2025?",
+      "options": [
+        { "text": "MS Dhoni", "votes": 22 },
+        { "text": "Hardik Pandya", "votes": 18 },
+        { "text": "Shreyas Iyer", "votes": 16 },
+        { "text": "Faf du Plessis", "votes": 12 }
+      ]
+    },
+    {
+      "question": "💥 Best bowler in IPL 2025?",
+      "options": [
+        { "text": "Mohammed Shami", "votes": 20 },
+        { "text": "Rashid Khan", "votes": 17 },
+        { "text": "Jasprit Bumrah", "votes": 22 },
+        { "text": "Yuzvendra Chahal", "votes": 14 }
+      ]
+    },
+    {
+      "question": "🏏 Best batsman in IPL 2025?",
+      "options": [
+        { "text": "Virat Kohli", "votes": 28 },
+        { "text": "Shubman Gill", "votes": 23 },
+        { "text": "Ruturaj Gaikwad", "votes": 21 },
+        { "text": "Suryakumar Yadav", "votes": 19 }
+      ]
+    },
+    {
+        "question": "🎉 Best team jersey in IPL 2025?",
+        "options": [
+          { "text": "Delhi Capitals", "votes": 0 },
+          { "text": "Punjab Kings", "votes": 0 },
+          { "text": "Sunrisers Hyderabad", "votes": 0 },
+          { "text": "Lucknow Super Giants", "votes": 0 }
+        ]
+      },
+      {
+        "question": "🎙️ Best commentator in IPL 2025?",
+        "options": [
+          { "text": "Harsha Bhogle", "votes": 0 },
+          { "text": "Sanjay Manjrekar", "votes": 0 },
+          { "text": "Ian Bishop", "votes": 0 },
+          { "text": "Aakash Chopra", "votes": 0 }
+        ]
+      },
+      {
+        "question": "🏟️ Best stadium atmosphere in IPL 2025?",
+        "options": [
+          { "text": "Wankhede Stadium", "votes": 0 },
+          { "text": "Chepauk Stadium", "votes": 0 },
+          { "text": "Eden Gardens", "votes": 0 },
+          { "text": "Narendra Modi Stadium", "votes": 0 }
+        ]
+      },
+      {
+        "question": "🧠 Smartest strategic timeout usage?",
+        "options": [
+          { "text": "Chennai Super Kings", "votes": 0 },
+          { "text": "Gujarat Titans", "votes": 0 },
+          { "text": "Delhi Capitals", "votes": 0 },
+          { "text": "Punjab Kings", "votes": 0 }
+        ]
+      },
+      {
+        "question": "💪 Best all-rounder in IPL 2025?",
+        "options": [
+          { "text": "Hardik Pandya", "votes": 0 },
+          { "text": "Ravindra Jadeja", "votes": 0 },
+          { "text": "Ben Stokes", "votes": 0 },
+          { "text": "Andre Russell", "votes": 0 }
+        ]
+      },
+      {
+        "question": "🚀 Longest six of IPL 2025?",
+        "options": [
+          { "text": "Nicholas Pooran", "votes": 0 },
+          { "text": "Liam Livingstone", "votes": 0 },
+          { "text": "Andre Russell", "votes": 0 },
+          { "text": "Rinku Singh", "votes": 0 }
+        ]
+      },
+      {
+        "question": "😱 Most shocking moment of IPL 2025?",
+        "options": [
+          { "text": "Super Over twist", "votes": 0 },
+          { "text": "Mankading incident", "votes": 0 },
+          { "text": "Hat-trick out of nowhere", "votes": 0 },
+          { "text": "Low score defended", "votes": 0 }
+        ]
+      },
+      {
+        "question": "🧤 Best wicketkeeper of IPL 2025?",
+        "options": [
+          { "text": "MS Dhoni", "votes": 0 },
+          { "text": "Rishabh Pant", "votes": 0 },
+          { "text": "Sanju Samson", "votes": 0 },
+          { "text": "Dinesh Karthik", "votes": 0 }
+        ]
+      },
+      {
+        "question": "📈 Most improved player in IPL 2025?",
+        "options": [
+          { "text": "Rahul Tewatia", "votes": 0 },
+          { "text": "Arshdeep Singh", "votes": 0 },
+          { "text": "Rinku Singh", "votes": 0 },
+          { "text": "Abhishek Sharma", "votes": 0 }
+        ]
+      },
+      {
+        "question": "🎯 Most consistent performer of IPL 2025?",
+        "options": [
+          { "text": "Shubman Gill", "votes": 0 },
+          { "text": "Jos Buttler", "votes": 0 },
+          { "text": "Mohammed Siraj", "votes": 0 },
+          { "text": "Devdutt Padikkal", "votes": 0 }
+        ]
+      },
+      {
+        "question": "🏏 Best finisher in IPL 2025?",
+        "options": [
+          { "text": "MS Dhoni", "votes": 0 },
+          { "text": "David Miller", "votes": 0 },
+          { "text": "Rinku Singh", "votes": 0 },
+          { "text": "Marcus Stoinis", "votes": 0 }
+        ]
+      },
+      {
+        "question": "🎯 Most accurate bowler in IPL 2025?",
+        "options": [
+          { "text": "Bhuvneshwar Kumar", "votes": 0 },
+          { "text": "Mohammed Shami", "votes": 0 },
+          { "text": "Jasprit Bumrah", "votes": 0 },
+          { "text": "Axar Patel", "votes": 0 }
+        ]
+      },
+      {
+        "question": "💥 Most explosive powerplay team?",
+        "options": [
+          { "text": "Rajasthan Royals", "votes": 0 },
+          { "text": "Mumbai Indians", "votes": 0 },
+          { "text": "Chennai Super Kings", "votes": 0 },
+          { "text": "Sunrisers Hyderabad", "votes": 0 }
+        ]
+      },
+      {
+        "question": "🧤 Best fielding side in IPL 2025?",
+        "options": [
+          { "text": "Gujarat Titans", "votes": 0 },
+          { "text": "Lucknow Super Giants", "votes": 0 },
+          { "text": "Punjab Kings", "votes": 0 },
+          { "text": "Delhi Capitals", "votes": 0 }
+        ]
+      },
+      {
+        "question": "📺 Best IPL 2025 match highlight moment?",
+        "options": [
+          { "text": "Last-ball six win", "votes": 0 },
+          { "text": "Hat-trick celebration", "votes": 0 },
+          { "text": "Record chase", "votes": 0 },
+          { "text": "Unbelievable catch", "votes": 0 }
+        ]
+      },
+      {
+        "question": "🌟 Emerging uncapped player of IPL 2025?",
+        "options": [
+          { "text": "N Tilak Varma", "votes": 0 },
+          { "text": "Yash Dayal", "votes": 0 },
+          { "text": "Sai Sudharsan", "votes": 0 },
+          { "text": "Tushar Deshpande", "votes": 0 }
+        ]
+      },
+      {
+        "question": "🎬 Best celebration in IPL 2025?",
+        "options": [
+          { "text": "Virat Kohli's roar", "votes": 0 },
+          { "text": "Andre Russell’s muscle flex", "votes": 0 },
+          { "text": "MS Dhoni’s calm clap", "votes": 0 },
+          { "text": "Rinku Singh's bat raise", "votes": 0 }
+        ]
+      },
+      {
+        "question": "💸 Best auction pick of IPL 2025?",
+        "options": [
+          { "text": "Mitchell Starc", "votes": 0 },
+          { "text": "Harry Brook", "votes": 0 },
+          { "text": "Shivam Mavi", "votes": 0 },
+          { "text": "Sam Curran", "votes": 0 }
+        ]
+      },
+      {
+        "question": "🧠 Most tactical captain in IPL 2025?",
+        "options": [
+          { "text": "KL Rahul", "votes": 0 },
+          { "text": "Faf du Plessis", "votes": 0 },
+          { "text": "Rohit Sharma", "votes": 0 },
+          { "text": "Shubman Gill", "votes": 0 }
+        ]
+      },
+      {
+        "question": "🚨 Best run-out of IPL 2025?",
+        "options": [
+          { "text": "Direct hit from deep", "votes": 0 },
+          { "text": "Keeper’s lightning-fast stumping", "votes": 0 },
+          { "text": "Relay throw to perfection", "votes": 0 },
+          { "text": "Unbelievable team coordination", "votes": 0 }
+        ]
+      }
+  ]
+  

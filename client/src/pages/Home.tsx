@@ -6,20 +6,23 @@ import Poll from "./Poll/Poll";
 const Home: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen bg-[#f4f4f7] text-gray-900">
-        <div className="fixed min-w-screen">
-            <Navbar />
-        </div>
-      <div className="flex flex-1 justify-center items-start p-8 gap-8 flex-wrap md:flex-nowrap mt-10">
+      <div className="fixed w-full z-50">
+        <Navbar />
+      </div>
+
+      <div className="flex flex-1 justify-center items-start p-8 gap-8 flex-wrap md:flex-nowrap mt-24">
         {/* Quiz in center */}
         <div className="flex-1 flex justify-center">
           <Quiz />
         </div>
-
-        {/* Poll on right side */}
-        <div className="w-full md:w-96">
-          <Poll />
-        </div>
       </div>
+
+      {/* Poll fixed on right */}
+{/* Poll fixed on right */}
+<div className="hidden md:block fixed right-8 top-24 w-96 h-[80vh] overflow-hidden rounded-2xl shadow-lg bg-white">
+  <Poll />
+</div>
+
     </div>
   );
 };
