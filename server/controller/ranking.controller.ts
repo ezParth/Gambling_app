@@ -5,6 +5,7 @@ import { CustomError, ValueResponse } from "../config/Response";
 
 const generateBatsmanRanking = (req: any, res: any) => {
     try {
+        console.log("hitting");
         const odi = generateOdiBatsmanRanking();
         const t20 = generateT20BatsmanRanking();
         const test = generateTestBatsmanRanking();
@@ -13,7 +14,7 @@ const generateBatsmanRanking = (req: any, res: any) => {
         }
 
         const result = {"odi": odi, "t20": t20, "test": test};
-        console.log("Result", result)
+        // console.log("Result", result)
         return new ValueResponse(200, "Rankings generated successfully: ", "ranking", result, true).SendResponse(res);
     } catch (error) {
         console.log("Error generating batsman ranking", error);
