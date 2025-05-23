@@ -1,0 +1,257 @@
+{
+    "test": [
+      {
+        "rank": "01",
+        "country": "England",
+        "name": "Joe Root",
+        "rating": 895,
+        "best_rating": 932,
+        "best_performance": "v Pakistan at Multan 2024"
+      },
+      {
+        "rank": "02",
+        "country": "England",
+        "name": "Harry Brook",
+        "rating": 876,
+        "best_rating": 898,
+        "best_performance": "v New Zealand at Wellington 2024"
+      },
+      {
+        "rank": "03",
+        "country": "New Zealand",
+        "name": "Kane Williamson",
+        "rating": 867,
+        "best_rating": 919,
+        "best_performance": "v Pakistan at Christchurch 2021"
+      },
+      {
+        "rank": "04",
+        "country": "India",
+        "name": "Yashasvi Jaiswal",
+        "rating": 847,
+        "best_rating": 854,
+        "best_performance": "v Australia at Melbourne 2024"
+      },
+      {
+        "rank": "05",
+        "country": "Australia",
+        "name": "Steve Smith",
+        "rating": 823,
+        "best_rating": 947,
+        "best_performance": "v South Africa at Durban 2018"
+      },
+      {
+        "rank": "06",
+        "country": "South Africa",
+        "name": "Temba Bavuma",
+        "rating": 769,
+        "best_rating": 769,
+        "best_performance": "v Pakistan at Cape Town 2025"
+      },
+      {
+        "rank": "07",
+        "country": "Sri Lanka",
+        "name": "Kamindu Mendis",
+        "rating": 761,
+        "best_rating": 779,
+        "best_performance": "v Australia at Galle 2025"
+      },
+      {
+        "rank": "08",
+        "country": "Australia",
+        "name": "Travis Head",
+        "rating": 748,
+        "best_rating": 884,
+        "best_performance": "v India at The Oval 2023"
+      },
+      {
+        "rank": "09",
+        "country": "Australia",
+        "name": "Usman Khawaja",
+        "rating": 739,
+        "best_rating": 847,
+        "best_performance": "v England at Lord's 2023"
+      },
+      {
+        "rank": "=",
+        "country": "India",
+        "name": "Rishabh Pant",
+        "rating": 739,
+        "best_rating": 801,
+        "best_performance": "v England at Edgbaston 2022"
+      },
+      {
+        "rank": "=",
+        "country": "Pakistan",
+        "name": "Saud Shakeel",
+        "rating": 739,
+        "best_rating": 764,
+        "best_performance": "v South Africa at Centurion 2024"
+      }
+    ],
+    "odi": [
+      {
+        "rank": "01",
+        "country": "India",
+        "name": "Shubman Gill",
+        "rating": 784,
+        "best_rating": 847,
+        "best_performance": "v Australia at Indore 2023"
+      },
+      {
+        "rank": "02",
+        "country": "Pakistan",
+        "name": "Babar Azam",
+        "rating": 766,
+        "best_rating": 898,
+        "best_performance": "v West Indies at Multan 2022"
+      },
+      {
+        "rank": "03",
+        "country": "India",
+        "name": "Rohit Sharma",
+        "rating": 756,
+        "best_rating": 882,
+        "best_performance": "v Sri Lanka at Headingley 2019"
+      },
+      {
+        "rank": "04",
+        "country": "South Africa",
+        "name": "Heinrich Klaasen",
+        "rating": 744,
+        "best_rating": 760,
+        "best_performance": "v England at Karachi 2025"
+      },
+      {
+        "rank": "05",
+        "country": "India",
+        "name": "Virat Kohli",
+        "rating": 736,
+        "best_rating": 909,
+        "best_performance": "v England at Headingley 2018"
+      },
+      {
+        "rank": "06",
+        "country": "New Zealand",
+        "name": "Daryl Mitchell",
+        "rating": 720,
+        "best_rating": 751,
+        "best_performance": "v India at Mumbai 2023"
+      },
+      {
+        "rank": "07",
+        "country": "Ireland",
+        "name": "Harry Tector",
+        "rating": 713,
+        "best_rating": 767,
+        "best_performance": "v Afghanistan at Sharjah 2024"
+      },
+      {
+        "rank": "08",
+        "country": "India",
+        "name": "Shreyas Iyer",
+        "rating": 704,
+        "best_rating": 710,
+        "best_performance": "v New Zealand at Mumbai 2023"
+      },
+      {
+        "rank": "09",
+        "country": "Sri Lanka",
+        "name": "Charith Asalanka",
+        "rating": 694,
+        "best_rating": 694,
+        "best_performance": "v Australia at Colombo (RPS) 2025"
+      },
+      {
+        "rank": "10",
+        "country": "Afghanistan",
+        "name": "Ibrahim Zadran",
+        "rating": 676,
+        "best_rating": 693,
+        "best_performance": "v Australia at Mumbai 2023"
+      }
+    ],
+    "t20": [
+      {
+        "rank": "01",
+        "country": "Australia",
+        "name": "Travis Head",
+        "rating": 856,
+        "best_rating": 885,
+        "best_performance": "v Scotland at Edinburgh 2024"
+      },
+      {
+        "rank": "02",
+        "country": "India",
+        "name": "Abhishek Sharma",
+        "rating": 829,
+        "best_rating": 829,
+        "best_performance": "v England at Mumbai 2025"
+      },
+      {
+        "rank": "03",
+        "country": "England",
+        "name": "Phil Salt",
+        "rating": 815,
+        "best_rating": 881,
+        "best_performance": "v West Indies at Barbados 2024"
+      },
+      {
+        "rank": "04",
+        "country": "India",
+        "name": "Tilak Varma",
+        "rating": 804,
+        "best_rating": 845,
+        "best_performance": "v England at Chennai 2025"
+      },
+      {
+        "rank": "05",
+        "country": "India",
+        "name": "Suryakumar Yadav",
+        "rating": 739,
+        "best_rating": 912,
+        "best_performance": "v New Zealand at Ranchi 2023"
+      },
+      {
+        "rank": "06",
+        "country": "England",
+        "name": "Jos Buttler",
+        "rating": 735,
+        "best_rating": 756,
+        "best_performance": "v India at Chennai 2025"
+      },
+      {
+        "rank": "07",
+        "country": "Sri Lanka",
+        "name": "Pathum Nissanka",
+        "rating": 714,
+        "best_rating": 722,
+        "best_performance": "v New Zealand at Bay Oval 2024"
+      },
+      {
+        "rank": "08",
+        "country": "New Zealand",
+        "name": "Tim Seifert",
+        "rating": 708,
+        "best_rating": 708,
+        "best_performance": "v Pakistan at Wellington 2025"
+      },
+      {
+        "rank": "09",
+        "country": "Pakistan",
+        "name": "Babar Azam",
+        "rating": 681,
+        "best_rating": 900,
+        "best_performance": "v England at Cardiff 2019"
+      },
+      {
+        "rank": "10",
+        "country": "Sri Lanka",
+        "name": "Kusal Perera",
+        "rating": 676,
+        "best_rating": 786,
+        "best_performance": "v West Indies at Mirpur 2014"
+      }
+    ]
+  }
+  
