@@ -12,7 +12,7 @@ const generateTestBatsmanRanking = () => {
             rating: b.rating
         }));
 
-        console.log(result);
+        // console.log(result);
         return result;
     } catch (error) {
         console.log("Error during generating test ranking", error);

@@ -12,7 +12,7 @@ const generateOdiBatsmanRanking = () => {
             rating: b.rating
         }));
 
-        console.log(result);
+        // console.log(result);
         return result; // if you want to return the result
     } catch (error) {
         console.log("Error during generating odi ranking", error);

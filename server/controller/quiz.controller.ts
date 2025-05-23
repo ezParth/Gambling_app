@@ -32,7 +32,7 @@ const getAQuestion = async (req: any, res: any) => {
     });
 
     const response = await Promise.all(promises);
-    console.log('Response: ', response)
+    // console.log('Response: ', response)
 
     return new ValueResponse(
       200,

@@ -10,6 +10,7 @@ const Quiz: React.FC = () => {
   const [isAnswered, setIsAnswered] = useState(false);
   const [quiz, setQuiz] = useState([]);
   const countRef: React.RefObject<number> = useRef(0);
+  const checkRef: React.RefObject<number> = useRef(0);
 
   const handleOptionClick = (option: string) => {
     countRef.current += 1;
@@ -59,8 +60,10 @@ const Quiz: React.FC = () => {
       setIsAnswered(false);
       countRef.current = 0;
       setQuiz(result.Quiz);
-      
-      toast.success("✅ Data fetched successfully!");
+      if(checkRef.current == 0) {
+        checkRef.current++;
+        toast.success("Start The Quiz, Correct: +5, Wrong -2 points");
+      }
     } catch (error) {
       console.log("Error in fetchdata: ", error);
       toast.error("❌ Failed to fetch data.");

@@ -12,7 +12,7 @@ const generateT20BatsmanRanking = () => {
             rating: b.rating
         }));
 
-        console.log(result);
+        // console.log(result);
         return result;
     } catch (error) {
         console.log("Error during generating t20 ranking", error);
