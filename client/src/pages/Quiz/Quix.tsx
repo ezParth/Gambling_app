@@ -1,6 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import getQuestion from "../../api/question";
 import toast from "react-hot-toast";
+import { LoginContext } from "../../Context/Login.context";
+import { getPoints, updatePoints } from "../../api/points";
+import { PointsContext } from "../../Context/Points.Context";
 
 const Quiz: React.FC = () => {
   const [question, setQuestion] = useState<string>("Click below to fetch quiz question!");
@@ -11,6 +14,8 @@ const Quiz: React.FC = () => {
   const [quiz, setQuiz] = useState([]);
   const countRef: React.RefObject<number> = useRef(0);
   const checkRef: React.RefObject<number> = useRef(0);
+  const { isLoggedIn } = useContext(LoginContext)
+  const { setPoints } = useContext(PointsContext);
 
   const handleOptionClick = (option: string) => {
     countRef.current += 1;
@@ -28,6 +33,11 @@ const Quiz: React.FC = () => {
   };
 
   useEffect(() => {
+    if(selectedOption == answer){
+      updatePoint(true)
+     }else{
+      updatePoint(false);
+     }
     setTimeout(() => {
     if(countRef.current > 4) {
       fetchdata();
@@ -40,12 +50,33 @@ const Quiz: React.FC = () => {
         setIsAnswered(false);
         // countRef.current = 0;
       }
-    }, 2200)
+    }, 2000)
   }, [isAnswered])
+
+  const fetchPoints = async () => {
+    try {
+      const points = await getPoints();
+      if(points) {
+        setPoints(points);
+      }
+    } catch (error) {
+      console.log('error in fetchPoints', error);
+    }
+  }
 
   useEffect(() => {
     fetchdata();
+    fetchPoints();
   }, [])
+
+  const updatePoint = async (bool: boolean) => {
+    if(isLoggedIn) {
+      const res = await updatePoints(bool);
+      if(res == true) {
+        // do something
+      }
+    }
+  }
 
   const fetchdata = async () => {
     try {

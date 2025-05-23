@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { loginUser, registerUser } from "../../api/login";
 import { useNavigate } from "react-router-dom";
 import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
+import { LoginContext } from "../../Context/Login.context";
 
 const Login: React.FC = () => {
     const navigate = useNavigate();
+    const { setIsLoggedIn } = useContext(LoginContext);
     const [isLogin, setIsLogin] = useState(true);
     const [form, setForm] = useState({
         username: "",
@@ -22,6 +24,7 @@ const Login: React.FC = () => {
         if (isLogin) {
             const result = await loginUser({ username: form.username, password: form.password });
             if(result.success) {
+                setIsLoggedIn(true);
                 navigate('/');
                 toast.success("Task completed!", {
                     position: "top-right",

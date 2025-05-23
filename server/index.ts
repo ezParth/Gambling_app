@@ -4,6 +4,7 @@ import AuthRouter from './router/auth.routes';
 import cors from 'cors'
 import QuestionRouter from './router/questions.routes';
 import RankingsRouter from './router/ranking.routes';
+import PointRouter from './router/Points.routes';
 
 const app = express()
 const PORT = process.env.PORT || 3000;
@@ -13,6 +14,7 @@ connectDB();
 app.use('/api/auth', AuthRouter);
 app.use('/api/questions', QuestionRouter);
 app.use('/api/ranking', RankingsRouter); // http://localhost:3000/api/ranking/get-batsman
+app.use('/app/points', PointRouter);
 
 app.listen(PORT, () => {
     console.log("Server bounded successfully!")
