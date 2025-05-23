@@ -1,6 +1,6 @@
 import odiRankings from '../data/IccBatsmanRanking.json'
 
-const generateT20Ranking = () => {
+const generateT20BatsmanRanking = () => {
     try {
         let result = [];
         const batsmen = odiRankings.t20;
@@ -19,4 +19,4 @@ const generateT20Ranking = () => {
     }
 }
 
-export { generateT20Ranking }
+export { generateT20BatsmanRanking }
